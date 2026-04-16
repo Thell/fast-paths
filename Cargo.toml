@@ -1,0 +1,13 @@
+[package]
+name = "fast-paths"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "fast_paths"
+crate-type = ["cdylib"]
+
+[dependencies]
+fast_paths = "1.0.0"
+# fast_paths = { git = "https://github.com/Thell/fast_paths", branch = "master" }
+pyo3 = { version = "0.28.2", features = ["experimental-inspect"] }
